@@ -12,4 +12,23 @@ $(document).ready(function () {
       );
     }
   });
+
+  // Animate progress bars when Skills section is in view
+  $(window).on("scroll", function () {
+    var skillsTop = $("#skills").offset().top;
+    var windowBottom = $(window).scrollTop() + $(window).height();
+    if (windowBottom > skillsTop) {
+      $(".progress-bar").each(function () {
+        $(this).animate(
+          {
+            width: $(this)
+              .attr("style")
+              .match(/width:\s*(\d+%)/)[1],
+          },
+          1000
+        );
+      });
+      $(window).off("scroll"); // Run animation only once
+    }
+  });
 });
