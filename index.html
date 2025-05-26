@@ -1,245 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SirRaph - Portfolio</title>
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Font Awesome for Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Sir-Raph</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+    <link rel="stylesheet" type="text/css" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+	-->
+	<!--
+	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	-->
+	 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
-    <!-- Hero Section -->
-    <section
-      id="home"
-      class="d-flex align-items-center bg-light"
-      style="min-height: 100vh"
-    >
-      <div class="container text-center">
-        <h1 class="display-4">Hi, I'm Ezeoma Raphael Osondu</h1>
-        <p class="lead">
-          A passionate .NET MVC Developer crafting responsive and user-friendly
-          applications.
-        </p>
-        <a href="#about" class="btn btn-primary btn-lg">Explore My Work</a>
-      </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">About Me</h2>
-        <div class="row">
-          <div class="col-md-6 mx-auto text-center">
-            <p>
-              I'm Raphael, a full-stack developer with a strong background in
-              SQL, .NET MVC, C#, JavaScript, CSS, Html, jquery, and Bootstrap. I
-              specialize in building scalable web applications and have a
-              passion for creating seamless user experiences. With hands-on
-              experience in Entity Framework, AJAX, and responsive design, I
-              love tackling complex problems and delivering clean, efficient
-              code. In my spare time, I explore new tech stacks and contribute
-              to open-source projects.
-            </p>
-            <p>
-              Fun fact: When I'm at someone's place, I'm good with just water,
-              unless I specifically ask for food.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="text-center mb-4">Skills</h2>
-        <div class="row">
-          <div class="col-md-4 mb-3">
-            <h5>.NET MVC</h5>
-            <div class="progress">
-              <div class="progress-bar bg-primary" style="width: 85%">85%</div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <h5>C#</h5>
-            <div class="progress">
-              <div class="progress-bar bg-primary" style="width: 65%">65%</div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <h5>JavaScript/jQuery</h5>
-            <div class="progress">
-              <div class="progress-bar bg-primary" style="width: 65%">65%</div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <h5>Bootstrap/CSS</h5>
-            <div class="progress">
-              <div class="progress-bar bg-primary" style="width: 90%">90%</div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <h5>Entity Framework</h5>
-            <div class="progress">
-              <div class="progress-bar bg-primary" style="width: 70%">70%</div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <h5>Git/GitHub</h5>
-            <div class="progress">
-              <div class="progress-bar bg-primary" style="width: 60%">60%</div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <h5>SQL</h5>
-            <div class="progress">
-              <div class="progress-bar bg-primary" style="width: 65%">65%</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Projects</h2>
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">MMI/MAC</h5>
-                <p class="card-text">
-                  A .NET MVC application for managing events and tickets,
-                  featuring dynamic ticket creation and media uploads with
-                  online payment functionality.
-                </p>
-                <a
-                  href="https://themessianicmovement.com/"
-                  class="btn btn-outline-primary"
-                  >View Project</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">BeezNest/E-Commerce</h5>
-                <p class="card-text">
-                  A responsive web app built with .NET MVC and Bootstrap,
-                  allowing seamless online shopping ability.
-                </p>
-                <a
-                  href="https://github.com/SirRaph-MT"
-                  class="btn btn-outline-primary"
-                  >View Project</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">BiviHr</h5>
-                <p class="card-text">
-                  A significant contributor to a human resources management
-                  application built for seamlessly managing staffs and employees
-                  in firms.
-                </p>
-                <a href="https://bivihr.com/" class="btn btn-outline-primary"
-                  >View Project</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="text-center mb-4">Get in Touch</h2>
-        <div class="row">
-          <div class="col-md-6 mx-auto text-center">
-            <p>
-              Interested in collaborating or have a project in mind? Reach out!
-            </p>
-            <ul class="list-unstyled">
-              <li>
-                <i class="fas fa-envelope"></i>
-                <a href="mailto:">raphaelezeoma@gmail.com</a>
-              </li>
-              <li>
-                <i class="fab fa-facebook"></i>
-                <a href="https://www.fb.com/l/6lp1kJRRR" target="_blank"
-                  >Facebook</a
-                >
-              </li>
-              <li>
-                <i class="fab fa-github"></i>
-                <a href="https://github.com/SirRaph-MT" target="_blank"
-                  >GitHub</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-      <p>&copy; 2025 SirRaph. All rights reserved.</p>
-    </footer>
-
-    <!-- Bootstrap JS and jQuery -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <!-- Custom JS -->
-    <script src="script.js"></script>
-  </body>
+
+    <title>Frontend Bootcamp</title>
+</head>
+<body>
+	<!-- navbar -->
+	<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+	<div class="container">
+		<a href="#" class="navbar-brand">Frontend Bootcamp</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	<div class="collapse navbar-collapse" id="navmenu">
+		<ul class="navbar-nav ms-auto">
+			<li class="nav-item">
+				<a href="#learn" class="nav-link">What You'll Learn</a>
+			</li>
+			<li class="nav-item">
+				<a href="#Questions" class="nav-link">Questions</a>
+			</li>
+			<li class="nav-item">
+				<a href="#Instructor" class="nav-link">Instructors</a>
+			</li>
+		</ul>
+	</div>
+	</div>
+	</nav>
+
+	<!-- Showcase -->
+	<section class="bg-dark text-light p-5 p-lg-0 pt-lg-5  text-center text-sm-start">
+		<div class="container">
+		<div class="d-sm-flex align-items-center justify-content-between">
+			<!--
+			<div>
+				<h1>Become a <span class="text-warning">Web Developer</span></h1>
+				<p class="lead my-4">We focus on teaching our students the fundamentals <br>
+				of latest and greatest technologies to prepare them <br> for their first dev role.</p>
+				<button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Start the Enrollment</button>
+			</div>
+			-->
+
+<div>
+    <p class="lead my-4">We focus on teaching our students the fundamentals <br>
+    of latest and greatest technologies to prepare them <br> for their first dev role.</p>
+    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enrollModal">Start the Enrollment</button>
+</div>
+
+
+
+			<img class="img-fluid rounded d-none d-sm-block" src="img/obi5.jpg" alt="showcase">
+		</div>
+	</div>
+	</section>
+
+	<!--News letter -->
+	<section class="bg-primary text-light p-5">
+		<div class="container">
+		<div class="d-md-flex justify-content-between align-items-center">
+			<h3 class="mb-3 mb-md-0">Sign Up For Our Newsletter</h3>
+
+		<div class="input-group new-input">
+		  <input type="text" class="form-control" placeholder="Enter email">
+		  <button class="btn btn-dark btn" type="button">Button</button>
+		</div>
+		</div>
+	</div>
+  </section>
+
+  <!-- Boxes -->
+
+  <section class="p-5">
+  	<div class="container">
+  		<div class="row text-center g-4">
+  			<div class="col-md">
+  				<div class="card bg-dark text-light">
+  					<div class="card-body text-center">
+  						<div class="h1 mb-3"><i class="bi bi-laptop"></i></div>
+  						<h3 class="card-title mb-3">Hybrid</h3>
+  						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  						tempor incididunt ut labore et</p>
+  						<a href="#" class="btn btn-primary">Read More</a>
+  					</div>
+  				</div>
+  			</div>
+  			<div class="col-md">
+  				<div class="card bg-secondary text-light">
+  					<div class="card-body text-center">
+  						<div class="h1 mb-3"><i class="bi bi-person-square"></i></div>
+  						<h3 class="card-title mb-3">Virtual</h3>
+  						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  						tempor incididunt ut labore et</p>
+  						<a href="#" class="btn btn-dark">Read More</a>
+  					</div>
+  				</div></div>
+  			<div class="col-md">
+  				<div class="card bg-dark text-light">
+  					<div class="card-body text-center">
+  						<div class="h1 mb-3"><i class="bi bi-people"></i></div>
+  						<h3 class="card-title mb-3">In Person</h3>
+  						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  						tempor incididunt ut labore et</p>
+  						<a href="#" class="btn btn-primary">Read More</a>
+  					</div>
+  				</div>
+  			</div>
+  	</div>
+  	</div>
+  </section>
+  <!-- Learn -->
+
+  <section id="learn" class="p-5">
+	<div class="container">
+	<div class="row align-items-center justify-content-between">
+		<div class="col-md">
+			<img src="img/obi6.jpg" class="img-fluid" alt="Learning computer">
+		</div>  
+		<div class="col-md p-5">
+			<h2>Learn The Fundamental</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi 
+			</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			</p>
+			<a href="#" class="btn btn-light mt-3"><i class="bi bi-chevron-compact-right"></i>Read More</a>
+		</div>
+</div>
+</div>
+</section>
+
+<!-- React -->
+
+<section id="learn" class="p-5 bg-dark text-light">
+	<div class="container">
+	<div class="row align-items-center justify-content-between">  
+		<div class="col-md p-5">
+			<h2>Learn React</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi 
+			</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			</p>
+			<a href="#" class="btn btn-light mt-3"><i class="bi bi-chevron-compact-right"></i>Read More</a>
+		</div>
+		<div class="col-md">
+			<img src="img/react.jpg" class="img-fluid" alt="Learning computer">
+		</div> 
+</div>
+</div>
+</section>
+
+<!--Question Accordion-->
+
+<section id="Questions" class="p-5">
+	<div  class="container">
+		<h2 class="text-center mb-4">Frequently Asked Questions</h2>
+		<div class="accordion accordion-flush" id="Questions">
+			<!-- item 1 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one">
+       Where Exactly Are You Located?
+      </button>
+    </h2>
+    <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#Questions">
+      <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    </div>
+  </div>
+
+  <!-- item 2 -->
+<div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two">
+       How Much Does It Cost To Attend?
+      </button>
+    </h2>
+    <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#Questions">
+      <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    </div>
+  </div>
+
+
+  <!-- item 3 -->
+
+ <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three">
+       What Do I Need To Know?
+      </button>
+    </h2>
+    <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#Questions">
+      <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    </div>
+  </div>
+
+  <!-- item 4 -->
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four">
+       How Do I sign up?
+      </button>
+    </h2>
+    <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#Questions">
+      <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    </div>
+  </div>
+
+  <!-- item 5-->
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-five">
+       Do you help me find a job?
+      </button>
+    </h2>
+    <div id="question-five" class="accordion-collapse collapse" data-bs-parent="#Questions">
+      <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  			</div>
+    	</div>
+ 	 </div>
+	</div>
+</section>
+
+<!--Instructors-->
+
+
+<section class="bg-primary p-3">
+	<div class="container">
+		<div class="text-center text-light lead">
+		<h2>Our Instructors</h2>
+		<p>Our instructors all have 5+ years working as a web developer in the industry</p>
+		</div>
+		<div class="row g-4">
+			<div class="col-md-6 col-lg-3">
+				<div class="card bg-light">
+					<div class="card-body text-center">
+						<img src="img/raph5.jpg" class="rounded-circle mb-3">
+						<h3 class="card-title mb-3">SirRaph</h3>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						</p>
+						<a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+						<a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>	
+						<a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>	
+						<a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>		
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-3">
+				<div class="card bg-light">
+					<div class="card-body text-center">
+						<img src="img/raph6.jpg" class="rounded-circle mb-3">
+						<h3 class="card-title mb-3">Ayr Star</h3>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						</p>
+						<a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+						<a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>	
+						<a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>	
+						<a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>		
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-3">
+				<div class="card bg-light">
+					<div class="card-body text-center">
+						<img src="img/raph8.jpg" class="rounded-circle mb-3">
+						<h3 class="card-title mb-3">Baba Voss</h3>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						</p>
+						<a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+						<a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>	
+						<a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>	
+						<a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>		
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-3">
+				<div class="card bg-light">
+					<div class="card-body text-center">
+						<img src="img/raph7.jpg" class="rounded-circle mb-3">
+						<h3 class="card-title mb-3">Lagertha</h3>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						</p>
+						<a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+						<a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>	
+						<a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>	
+						<a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>		
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- contact-->
+
+<section class="row p-5">
+	<div class="container">
+	<div class="d-md-flex align-items-center justify-content-between">
+		<div class="p-5 lead">
+			<h2 class="text-center mb-4">Contact Info</h2>
+			<p><strong>Main Location:</strong>50 Main st Boston MA</p>
+			<hr>
+			<p><strong>Enrollment Phone:</strong>(555) 555-5555</p>
+			<hr>
+			<p><strong>Student Phone:</strong>(333)333-3333</p>
+			<hr>
+			<p><strong>Enrollment Email:</strong>(555) enrollment@gmail.com</p>
+			<hr>
+			<p><strong>Student Email:</strong>student@frontend.test</p>
+		</div>
+		<div class="col-md">
+			<img src="img/obi8.jpg" class="rounded p-5">
+		</div>
+	</div>
+	</div>
+</section>
+
+<!-- footer-->
+<footer class="p-5 bg-dark text-white text-center position relative">
+	<div class="container">
+		<p class="lead">copyright &copy; 2024 Frontend Bootcamp <a href="#" class="bottom-0 end-0 p-5"><i class="bi bi-arrow-up-circle h1 text-primary float-end"></i></a></p>
+		<!--
+		<a href="#" class="position-absolute bottom-0 end-0 p-5"><i class="bi bi-arrow-up-circle h1 text-warning"></i></a>
+		-->
+	</div>
+	
+</footer>
+
+<!-- Modal -->
+
+<!--
+<div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="enroll">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+-->
+
+
+<div class="modal fade" id="enrollModal" tabindex="-1" aria-labelledby="enrollModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="enrollModalLabel">Enrollment Modal Title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            	<p class="lead">fill out the form below and we will get back to you</p>
+               <form>
+               	<div class="mb-3">
+	               	<label for="firt-name" class="col-form-label">First Name:</label>
+	               	<input type="text" id="first-name" class="form-control">
+               </div>
+               	<div class="mb-3">
+	               	<label for="last-name" class="col-form-label">Last Name:</label>
+	               	<input type="text" id="last-name" class="form-control">
+               </div>
+               	<div class="mb-3">
+	               	<label for="email" class="col-form-label">Email:</label>
+	               	<input type="email" id="email" class="form-control">
+               </div>
+               	<div class="mb-3">
+	               	<label for="phone" class="col-form-label">Phone:</label>
+	               	<input type="tel" id="phone" class="form-control">
+               </div>
+               </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
 </html>
