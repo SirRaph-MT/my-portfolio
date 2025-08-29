@@ -2,65 +2,94 @@ body {
   font-family: "Segoe UI", Arial, sans-serif;
 }
 
-.navbar {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
 section {
   padding: 80px 0;
 }
-
 h2 {
   font-weight: 600;
   margin-bottom: 30px;
 }
 
+/* Navbar */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Cards */
 .card {
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-.btn-outline-primary:hover {
-  background-color: #007bff;
-  color: white;
+/* Skills */
+#skills {
+  background: #1e1e1e;
+  color: #fff;
 }
-
+.skill-card {
+  background: #2a2a2a;
+  padding: 20px;
+  border-radius: 12px;
+}
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+.skill-icon {
+  font-size: 40px;
+  color: #ff9800;
+  margin-bottom: 10px;
+}
 .progress {
+  background: #333;
+  border-radius: 8px;
   height: 20px;
-  border-radius: 10px;
 }
-
 .progress-bar {
-  transition: width 0.5s ease-in-out;
+  background: linear-gradient(90deg, #ff9800, #ffb84d);
+  font-weight: bold;
+  color: #111;
 }
 
-#contact ul li {
-  margin: 10px 0;
+/* Certificates */
+#certificates {
+  background: #f8f9fa;
+}
+.certificate-card {
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  transition: transform 0.3s;
+}
+.certificate-card:hover {
+  transform: scale(1.05);
 }
 
-#contact i {
-  margin-right: 10px;
-  color: #007bff;
+/* Testimonials */
+#testimonials {
+  background: #1e1e1e;
+  color: #fff;
+}
+.testimonial {
+  background: #2a2a2a;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 15px 0;
+  font-style: italic;
 }
 
+/* Contact */
+#contact-form input,
+#contact-form textarea {
+  margin-bottom: 15px;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  section {
-    padding: 50px 0;
-  }
-
   h1.display-4 {
-    font-size: 2.5rem;
-  }
-
-  .card {
-    margin-bottom: 20px;
+    font-size: 2.2rem;
   }
 }

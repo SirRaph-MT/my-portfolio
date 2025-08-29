@@ -1,34 +1,47 @@
 $(document).ready(function () {
-  // Smooth scrolling for nav links
+  // Smooth scroll
   $("a.nav-link").on("click", function (event) {
     if (this.hash !== "") {
       event.preventDefault();
-      var hash = this.hash;
       $("html, body").animate(
-        {
-          scrollTop: $(hash).offset().top,
-        },
+        { scrollTop: $(this.hash).offset().top - 50 },
         800
       );
     }
   });
 
-  // Animate progress bars when Skills section is in view
+  // Animate progress bars
   $(window).on("scroll", function () {
     var skillsTop = $("#skills").offset().top;
     var windowBottom = $(window).scrollTop() + $(window).height();
+
     if (windowBottom > skillsTop) {
       $(".progress-bar").each(function () {
-        $(this).animate(
+        var $this = $(this);
+        var target = $this.data("width");
+        $this.animate({ width: target }, 1200);
+
+        $({ countNum: 0 }).animate(
+          { countNum: parseInt(target) },
           {
-            width: $(this)
-              .attr("style")
-              .match(/width:\s*(\d+%)/)[1],
-          },
-          1000
+            duration: 1200,
+            step: function () {
+              $this.text(Math.floor(this.countNum) + "%");
+            },
+            complete: function () {
+              $this.text(this.countNum + "%");
+            },
+          }
         );
       });
-      $(window).off("scroll"); // Run animation only once
+      $(window).off("scroll");
     }
+  });
+
+  // Contact form submit (dummy handler)
+  $("#contact-form").on("submit", function (e) {
+    e.preventDefault();
+    alert("Message sent! Thank you for reaching out.");
+    $(this).trigger("reset");
   });
 });
