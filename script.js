@@ -38,10 +38,30 @@ $(document).ready(function () {
     }
   });
 
-  // Contact form submit (dummy handler)
   $("#contact-form").on("submit", function (e) {
     e.preventDefault();
-    alert("Message sent! Thank you for reaching out.");
-    $(this).trigger("reset");
+
+    let $form = $(this);
+    let $alert = $("#form-alert");
+
+    $.ajax({
+      url: $form.attr("action"),
+      method: "POST",
+      data: $form.serialize(),
+      dataType: "json",
+      success: function () {
+        $alert
+          .removeClass("d-none alert-danger")
+          .addClass("alert alert-success")
+          .html("✅ Your message has been sent! I’ll get back to you soon.");
+        $form.trigger("reset");
+      },
+      error: function () {
+        $alert
+          .removeClass("d-none alert-success")
+          .addClass("alert alert-danger")
+          .html("❌ Oops! Something went wrong. Please try again.");
+      },
+    });
   });
 });

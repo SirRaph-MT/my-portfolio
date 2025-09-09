@@ -44,12 +44,6 @@
               <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#certificates">Certificates</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#testimonials">Testimonials</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
@@ -60,7 +54,7 @@
     <!-- Hero Section -->
     <section
       id="home"
-      class="d-flex align-items-center bg-light"
+      class="d-flex align-items-center"
       style="min-height: 100vh"
     >
       <div class="container text-center">
@@ -71,7 +65,7 @@
           width="180"
           height="180"
         />
-        <h1 class="display-4">
+        <h1 class="display-4 text-light">
           Hi, I'm <span class="text-warning">Ezeoma Raphael Osondu</span>
         </h1>
         <p class="lead">
@@ -83,23 +77,25 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-5">
+    <section id="about" class="py-5" style="background: #253529">
       <div class="container">
-        <h2 class="text-center mb-4">About Me</h2>
-        <div class="row justify-content-center">
+        <h2 class="text-center mb-4 text-decoration-underline text-light">
+          About Me
+        </h2>
+        <div class="row justify-content-center text-light">
           <div class="col-md-8 text-center">
             <p>
-              I'm Raphael, a full-stack developer with strong skills in SQL,
-              .NET MVC, C#, JavaScript, CSS, HTML, jQuery, and Bootstrap. I
+              I am full-stack developer with strong skills in SQL, DotNET MVC,
+              RestFul Api, C#, JavaScript, CSS, HTML, jQuery, and Bootstrap. I
               build scalable web applications and create seamless user
               experiences. With hands-on experience in Entity Framework, AJAX,
               and responsive design, I thrive on solving complex problems with
-              clean, efficient code. Not forgetting RESTful API development.
+              clean, efficient code.
             </p>
             <p><em>Fun fact: I love curiosity.</em></p>
             <a
               href="File/Ezeoma Raphael Osondu-Cv.pdf"
-              class="btn btn-outline-dark"
+              class="btn btn-outline-light"
               download
               ><i class="fa-solid fa-download"></i> Download CV</a
             >
@@ -136,7 +132,7 @@
               <i class="fa-brands fa-js skill-icon"></i>
               <h5>JavaScript / jQuery</h5>
               <div class="progress">
-                <div class="progress-bar" data-width="65%">0%</div>
+                <div class="progress-bar" data-width="55%">0%</div>
               </div>
             </div>
           </div>
@@ -145,9 +141,9 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="py-5 bg-light">
+    <section id="projects" class="py-5">
       <div class="container">
-        <h2 class="text-center mb-4">Projects</h2>
+        <h2 class="text-center mb-4 text-light">Projects</h2>
         <div class="row">
           <div class="col-md-4 mb-4">
             <div class="card h-100">
@@ -170,8 +166,10 @@
               <div class="card-body">
                 <h5 class="card-title">BeezNest</h5>
                 <p class="card-text">
-                  A responsive e-commerce showcase built with .NET MVC and
-                  Bootstrap.
+                  A responsive e-commerce showcase built with all stacks stated
+                  in
+                  <a href="#about" class="">about me</a>
+                  section. Project on GitHub
                 </p>
                 <a
                   href="https://github.com/SirRaph-MT"
@@ -199,72 +197,33 @@
       </div>
     </section>
 
-    <!-- Certificates -->
-    <section id="certificates" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Certificates</h2>
-        <div class="row text-center">
-          <div class="col-md-4">
-            <div class="certificate-card">
-              <i class="fa-solid fa-award fa-2x text-warning mb-3"></i>
-              <h5>ASP.NET MVC Developer</h5>
-              <p>Microsoft Learn (2024)</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="certificate-card">
-              <i class="fa-solid fa-award fa-2x text-warning mb-3"></i>
-              <h5>SQL & Database Design</h5>
-              <p>Udemy (2023)</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Testimonials</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="testimonial">
-              “Raphael is a dedicated developer who consistently delivers
-              high-quality solutions.”<br /><small>- Client, BiviHR</small>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="testimonial">
-              “His problem-solving skills and attention to detail made a big
-              difference on our project.”<br /><small
-                >- Project Lead, MMI</small
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Contact -->
-    <section id="contact" class="py-5 bg-light">
+    <section id="contact" class="py-5" style="background: #253529">
       <div class="container">
-        <h2 class="text-center mb-4">Get in Touch</h2>
+        <h2 class="text-center mb-4 text-light">Get in Touch</h2>
         <div class="row">
           <div class="col-md-6 mx-auto">
-            <form action="https://formspree.io/f/yourFormID" id="contact-form">
+            <form
+              action="https://formspree.io/f/xzzaozjk"
+              method="POST"
+              id="contact-form"
+            >
               <input
                 type="text"
+                name="name"
                 class="form-control"
                 placeholder="Your Name"
                 required
               />
               <input
                 type="email"
+                name="email"
                 class="form-control"
                 placeholder="Your Email"
                 required
               />
               <textarea
+                name="message"
                 class="form-control"
                 rows="4"
                 placeholder="Message"
@@ -274,6 +233,9 @@
                 Send Message
               </button>
             </form>
+            <!-- Custom alerts (hidden by default) -->
+            <div id="form-alert" class="alert mt-3 text-center d-none"></div>
+
             <ul class="list-unstyled text-center mt-4">
               <li>
                 <i class="fas fa-envelope text-warning"></i>
@@ -299,6 +261,13 @@
           </div>
         </div>
       </div>
+      <a
+        href="https://wa.me/2347039305088"
+        target="_blank"
+        class="whatsapp_float"
+      >
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+      </a>
     </section>
 
     <!-- Footer -->

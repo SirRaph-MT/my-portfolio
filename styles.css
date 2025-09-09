@@ -15,6 +15,14 @@ h2 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+#home {
+  background: #3d0c02;
+}
+
+#projects {
+  background: #3d0c02;
+}
+
 /* Cards */
 .card {
   transition: transform 0.3s, box-shadow 0.3s;
@@ -54,39 +62,29 @@ h2 {
   color: #111;
 }
 
-/* Certificates */
-#certificates {
-  background: #f8f9fa;
-}
-.certificate-card {
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-  transition: transform 0.3s;
-}
-.certificate-card:hover {
-  transform: scale(1.05);
-}
-
-/* Testimonials */
-#testimonials {
-  background: #1e1e1e;
-  color: #fff;
-}
-.testimonial {
-  background: #2a2a2a;
-  padding: 20px;
-  border-radius: 12px;
-  margin: 15px 0;
-  font-style: italic;
-}
-
 /* Contact */
 #contact-form input,
 #contact-form textarea {
   margin-bottom: 15px;
 }
 
+.whatsapp_float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 1000;
+}
+.whatsapp-icon {
+  margin-top: 16px;
+}
 /* Responsive */
 @media (max-width: 768px) {
   h1.display-4 {
