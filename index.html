@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ASP.NET MVC Developer specializing in scalable web applications, clean architecture, and real-world systems."
+    />
+    <meta name="author" content="Raphael Ezeoma" />
+
     <title>SirRaph - Portfolio</title>
 
     <!-- Bootstrap CSS -->
@@ -20,9 +26,9 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Sir-Raph</a>
+        <a class="navbar-brand fw-bold" href="#">Ezeoma Raphael</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -46,59 +52,88 @@
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
+            <li class="nav-item ms-lg-3 d-flex align-items-center">
+              <a
+                href="File/Raphael-Ezeoma-Resume.pdf"
+                class="btn btn-accent btn-sm"
+                download
+              >
+                <i class="fa-solid fa-download me-2"></i>Resume
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <!-- Hero Section -->
-    <section
-      id="home"
-      class="d-flex align-items-center"
-      style="min-height: 100vh"
-    >
-      <div class="container text-center">
-        <img
-          src="images/PortfImage.jpg"
-          alt="Raphael"
-          class="rounded-circle mb-4 shadow-lg"
-          width="180"
-          height="180"
-        />
-        <h1 class="display-4 text-light">
-          Hi, I'm <span class="text-warning">Ezeoma Raphael Osondu</span>
-        </h1>
-        <p class="lead text-light">
-          A passionate C#/.NET MVC Developer crafting responsive and
-          user-friendly applications.
-        </p>
-        <a href="#about" class="btn btn-warning btn-lg">Explore My Work</a>
+    <section id="home" class="hero-section d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- LEFT: TEXT -->
+          <div class="col-lg-6 text-white hero-text">
+            <h1 class="hero-title">
+              I build <span class="accent">scalable web applications</span>
+            </h1>
+            <p class="hero-subtitle">
+              Hi, I’m <strong>Ezeoma Raphael</strong> — a .NET/C# Developer
+              focused on clean architecture, performance, and real-world
+              business systems.
+            </p>
+
+            <div class="hero-actions mt-4">
+              <a href="#projects" class="btn btn-accent me-3">
+                View Projects
+              </a>
+              <a href="#contact" class="btn btn-outline-light"> Contact Me </a>
+            </div>
+          </div>
+
+          <!-- RIGHT: VIDEO -->
+          <div class="col-lg-6 d-none d-lg-block">
+            <div class="video-wrapper">
+              <video autoplay muted loop playsinline class="hero-video">
+                <source src="Videos/video1 (1).mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-5" style="background: #253529">
+    <section id="about" class="about-section">
       <div class="container">
-        <h2 class="text-center mb-4 text-decoration-underline text-light">
-          About Me
-        </h2>
-        <div class="row justify-content-center text-light">
-          <div class="col-md-8 text-center">
-            <p>
-              I am full-stack developer with strong skills in SQL, DotNET MVC,
-              RestFul Api, C#, JavaScript, CSS, HTML, jQuery, and Bootstrap. I
-              build scalable web applications and create seamless user
-              experiences. With hands-on experience in Entity Framework, AJAX,
-              and responsive design, I thrive on solving complex problems with
-              clean, efficient code.
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center text-white">
+            <h2 class="section-title mb-4">About Me</h2>
+
+            <p class="about-intro">
+              I’m a full-stack developer specializing in
+              <strong>ASP.NET MVC</strong> and modern web technologies. I focus
+              on building scalable, maintainable applications that solve real
+              business problems.
             </p>
-            <p><em>Fun fact: I love curiosity.</em></p>
+
+            <div class="about-points mt-4">
+              <p>• Strong experience with C#, SQL & Entity Framework</p>
+              <p>• RESTful APIs, AJAX & modern JavaScript workflows</p>
+              <p>• Responsive UI with Bootstrap & clean CSS</p>
+              <p>• Problem-solver with a strong attention to detail</p>
+            </div>
+
+            <p class="about-fun mt-4">
+              <em>Fun fact:</em> I genuinely enjoy curiosity and continuous
+              learning.
+            </p>
+
             <a
-              href="File/Ezeoma Raphael Osondu-Cv.pdf"
-              class="btn btn-outline-light"
+              href="File/Raphael-Ezeoma-Resume.pdf"
+              class="btn btn-outline-light mt-4"
               download
-              ><i class="fa-solid fa-download"></i> Download CV</a
             >
+              <i class="fa-solid fa-download me-2"></i>Download CV
+            </a>
           </div>
         </div>
       </div>
@@ -112,7 +147,7 @@
           <div class="col-md-4 mb-4">
             <div class="skill-card">
               <i class="fa-solid fa-code skill-icon"></i>
-              <h5>.NET MVC</h5>
+              <h5>.NET/C#</h5>
               <div class="progress">
                 <div class="progress-bar" data-width="85%">0%</div>
               </div>
@@ -120,8 +155,8 @@
           </div>
           <div class="col-md-4 mb-4">
             <div class="skill-card">
-              <i class="fa-solid fa-c skill-icon"></i>
-              <h5>C#</h5>
+              <i class="fa-solid fa-s skill-icon"></i>
+              <h5>SQL</h5>
               <div class="progress">
                 <div class="progress-bar" data-width="70%">0%</div>
               </div>
@@ -141,58 +176,112 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="py-5">
+    <section id="projects" class="projects-section">
       <div class="container">
-        <h2 class="text-center mb-4 text-light">Projects</h2>
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">MMI/MAC</h5>
-                <p class="card-text">
-                  A .NET MVC application for managing events and tickets with
-                  online payment.
-                </p>
-                <a
-                  href="https://themessianicmovement.com/"
-                  class="btn btn-outline-warning"
-                  >View Project</a
-                >
-              </div>
+        <h2 class="section-title text-center text-white mb-5">
+          Selected Projects
+        </h2>
+
+        <div class="row g-3">
+          <!-- Project 1 -->
+          <div class="col-md-3">
+            <div class="project-card h-100">
+              <h5 class="project-title">MMI / MAC</h5>
+              <p class="project-desc">
+                Event and ticket management system with online payments, admin
+                dashboards, and attendee tracking.
+              </p>
+
+              <ul class="project-stack">
+                <li>ASP.NET MVC</li>
+                <li>SQL Server</li>
+                <li>Bootstrap</li>
+                <li>Payment Integration</li>
+              </ul>
+
+              <a
+                href="https://themessianicmovement.com/"
+                target="_blank"
+                class="btn btn-accent mt-auto"
+              >
+                View Live Project
+              </a>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">BeezNest</h5>
-                <p class="card-text">
-                  A responsive e-commerce showcase built with all stacks stated
-                  in
-                  <a href="#about" class="">about me</a>
-                  section. Project on GitHub
-                </p>
-                <a
-                  href="https://github.com/SirRaph-MT"
-                  class="btn btn-outline-warning"
-                  >View Project</a
-                >
-              </div>
+
+          <!-- Project 2 -->
+          <div class="col-md-3">
+            <div class="project-card h-100">
+              <h5 class="project-title">BeezNest</h5>
+              <p class="project-desc">
+                E-commerce showcase platform focused on product presentation,
+                admin uploads, and responsive UI.
+              </p>
+
+              <ul class="project-stack">
+                <li>ASP.NET MVC</li>
+                <li>Entity Framework</li>
+                <li>jQuery & AJAX</li>
+                <li>Bootstrap</li>
+              </ul>
+
+              <a
+                href="https://github.com/SirRaph-MT"
+                target="_blank"
+                class="btn btn-outline-light mt-auto"
+              >
+                View on GitHub
+              </a>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">BiviHr</h5>
-                <p class="card-text">
-                  Contributor to a HR management application for managing staff
-                  & employees.
-                </p>
-                <a
-                  href="https://hr.bivisoft.com/"
-                  class="btn btn-outline-warning"
-                  >View Project</a
-                >
-              </div>
+
+          <!-- Project 3 -->
+          <div class="col-md-3">
+            <div class="project-card h-100">
+              <h5 class="project-title">BiviHR</h5>
+              <p class="project-desc">
+                HR management system for staff records, attendance, and employee
+                administration.
+              </p>
+
+              <ul class="project-stack">
+                <li>.NET MVC</li>
+                <li>SQL Server</li>
+                <li>Role-based Access</li>
+              </ul>
+
+              <a
+                href="https://hr.bivisoft.com/"
+                target="_blank"
+                class="btn btn-outline-light mt-auto"
+              >
+                View Live Project
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-md-3">
+            <div class="project-card h-100">
+              <h5 class="project-title">BiviHR</h5>
+              <p class="project-desc">
+                Report civic issues, track progress in real-time, and
+                collaborate with local authorities — all from your device.
+              </p>
+
+              <ul class="project-stack">
+                <li>.NET Web Api</li>
+                <li>SQL Server</li>
+                <li>Signal-R</li>
+              </ul>
+
+              <a
+                href="https://civichubweb.netlify.app/"
+                target="_blank"
+                class="btn btn-outline-light mt-auto"
+              >
+                View Live Project
+              </a>
             </div>
           </div>
         </div>
@@ -200,69 +289,79 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="py-5" style="background: #253529">
+    <section id="contact" class="contact-section">
       <div class="container">
-        <h2 class="text-center mb-4 text-light">Get in Touch</h2>
-        <div class="row">
-          <div class="col-md-6 mx-auto">
+        <h2 class="section-title text-center text-white mb-5">Get in Touch</h2>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
             <form
               action="https://formspree.io/f/xzzaozjk"
               method="POST"
               id="contact-form"
+              class="contact-form"
             >
               <input
                 type="text"
                 name="name"
                 class="form-control"
-                placeholder="Your Name"
+                placeholder="Name or company's Name"
                 required
               />
+
               <input
                 type="email"
                 name="email"
                 class="form-control"
-                placeholder="Your Email"
+                placeholder="Enter Email"
                 required
               />
+
               <textarea
                 name="message"
                 class="form-control"
                 rows="4"
-                placeholder="Message"
+                placeholder="type a Message"
                 required
               ></textarea>
-              <button type="submit" class="btn btn-warning w-100 mt-3">
+
+              <button type="submit" class="btn btn-accent w-100 mt-3">
                 Send Message
               </button>
             </form>
-            <!-- Custom alerts (hidden by default) -->
+
+            <!-- Alert -->
             <div id="form-alert" class="alert mt-3 text-center d-none"></div>
 
-            <ul class="list-unstyled text-center mt-4">
+            <!-- Contact Links -->
+            <ul class="contact-links mt-4">
               <li>
-                <i class="fas fa-envelope text-warning"></i>
-                <a href="mailto:raphaelezeoma@gmail.com"
-                  >raphaelezeoma@gmail.com</a
-                >
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:raphaelezeoma@gmail.com">
+                  raphaelezeoma@gmail.com
+                </a>
               </li>
               <li>
-                <i class="fab fa-linkedin text-warning"></i>
+                <i class="fab fa-linkedin"></i>
                 <a
                   href="https://www.linkedin.com/in/raphael-ezeoma-9b97b9368/"
                   target="_blank"
-                  >LinkedIn</a
                 >
+                  LinkedIn
+                </a>
               </li>
               <li>
-                <i class="fab fa-github text-warning"></i>
-                <a href="https://github.com/SirRaph-MT" target="_blank"
-                  >GitHub</a
-                >
+                <i class="fab fa-github"></i>
+                <a href="https://github.com/SirRaph-MT" target="_blank">
+                  GitHub
+                </a>
               </li>
             </ul>
           </div>
         </div>
       </div>
+
+      <!-- WhatsApp -->
       <a
         href="https://wa.me/2347039305088"
         target="_blank"
@@ -273,8 +372,10 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-      <p>&copy; 2025 SirRaph. All rights reserved.</p>
+    <footer class="bg-black text-center py-4">
+      <p class="text-secondary mb-0">
+        © 2025 SirRaph · Built with care and clean code
+      </p>
     </footer>
 
     <!-- JS -->

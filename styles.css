@@ -11,61 +11,246 @@ h2 {
 }
 
 /* Navbar */
-.navbar {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+.custom-navbar {
+  background: #000;
 }
 
-#home {
-  background: #3d0c02;
+.navbar .btn-accent {
+  padding: 6px 16px;
+  font-weight: 600;
 }
 
-#projects {
-  background: #3d0c02;
+/* =========================
+   HERO SECTION (REFINED)
+========================= */
+
+.hero-section {
+  min-height: 100vh;
+  background: #000; /* 60% BLACK */
+  padding-top: 120px;
 }
 
-/* Cards */
-.card {
-  transition: transform 0.3s, box-shadow 0.3s;
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
 }
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+
+.hero-title .accent {
+  color: #f74b00; /* 10% ACCENT */
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: #e0e0e0; /* 30% WHITE */
+  max-width: 520px;
+  margin-top: 20px;
+}
+
+.btn-accent {
+  background: #f74b00;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  font-weight: 600;
+}
+
+.btn-accent:hover {
+  background: #d63f00;
+  color: #fff;
+}
+
+/* VIDEO */
+.video-wrapper {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.hero-video {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  filter: brightness(0.7) contrast(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section {
+  background: #000;
+  padding: 100px 0;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.about-intro {
+  font-size: 1.1rem;
+  color: #e5e5e5;
+  line-height: 1.7;
+}
+
+.about-points p {
+  margin: 8px 0;
+  color: #ccc;
+}
+
+.about-fun {
+  color: #aaa;
 }
 
 /* Skills */
+/* =========================
+   SKILLS SECTION
+========================= */
+
 #skills {
-  background: #1e1e1e;
+  background: #000;
   color: #fff;
 }
+
 .skill-card {
-  background: #2a2a2a;
-  padding: 20px;
-  border-radius: 12px;
-}
-.skill-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-}
-.skill-icon {
-  font-size: 40px;
-  color: #ff9800;
-  margin-bottom: 10px;
-}
-.progress {
-  background: #333;
-  border-radius: 8px;
-  height: 20px;
-}
-.progress-bar {
-  background: linear-gradient(90deg, #ff9800, #ffb84d);
-  font-weight: bold;
-  color: #111;
+  background: #111;
+  padding: 24px;
+  border-radius: 14px;
+  transition: transform 0.3s ease;
 }
 
-/* Contact */
-#contact-form input,
-#contact-form textarea {
-  margin-bottom: 15px;
+.skill-card:hover {
+  transform: translateY(-6px);
+}
+
+.skill-icon {
+  font-size: 34px;
+  color: #f74b00; /* Accent */
+  margin-bottom: 12px;
+}
+
+.skill-card h5 {
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+/* Progress bar */
+.progress {
+  background: #222;
+  height: 8px;
+  border-radius: 6px;
+}
+
+.progress-bar {
+  background: #f74b00;
+  color: transparent; /* hide text inside bar */
+  transition: width 1.2s ease;
+}
+
+/* =========================
+   PROJECTS SECTION
+========================= */
+
+.projects-section {
+  background: #000;
+  padding: 100px 0;
+}
+
+.project-card {
+  background: #111;
+  border-radius: 16px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.project-title {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.project-desc {
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.project-stack {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 24px;
+}
+
+.project-stack li {
+  color: #aaa;
+  font-size: 0.85rem;
+}
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-section {
+  background: #000;
+  padding: 100px 0;
+}
+
+.contact-form .form-control {
+  background: #111;
+  border: 1px solid #222;
+  color: #fff;
+  padding: 14px;
+  margin-bottom: 16px;
+}
+
+.contact-form .form-control::placeholder {
+  color: #777;
+}
+
+.contact-form .form-control:focus {
+  border-color: #f74b00;
+  box-shadow: none;
+}
+
+.contact-links {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.contact-links li {
+  margin: 10px 0;
+}
+
+.contact-links i {
+  color: #f74b00;
+  margin-right: 8px;
+}
+
+.contact-links a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  color: #fff;
 }
 
 .whatsapp_float {
